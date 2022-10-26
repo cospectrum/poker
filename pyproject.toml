@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=54", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poker"
+version = "0.0.1"
+description = "poker"
+authors = [
+    {"author" = "Alex Severin", "email" = "severinalexeyv@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["poker"]
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.10"
+
+[tool.pylint.message_control]
+disable = [
+    "missing-docstring",
+    "too-few-public-methods",
+    "unused-argument",
+    "invalid-name",
+    "unspecified-encoding",
+    "unused-import",
+    "too-many-locals",
+    "R0801",
+    "W0622",
+    "C0411",
+    "E0611",
+]

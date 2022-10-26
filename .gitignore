@@ -1,0 +1,42 @@
+# ignore all files
+/*
+
+
+# ignore trash
+env
+venv
+build
+dist
+*cache
+
+
+# ignore cache
+*.idea
+*.egg-info
+**/__pycache__
+*mypy_cache
+*.pytest_cache
+*.swp
+
+
+# ignore binary files
+*.o
+*.out
+*.exe
+*.gch
+*.so
+*.a
+
+
+# do not ignore
+!.gitignore
+
+!README.md
+!Makefile
+
+!pyproject.toml
+!tox.ini
+
+!tests
+
+!poker
