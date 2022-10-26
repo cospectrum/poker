@@ -3,9 +3,7 @@ from dataclasses import dataclass
 from .player import Player
 from .board import Board
 from .deck import Deck
-
-
-Money = int
+from .money import Money
 
 
 @dataclass

@@ -1,13 +1,12 @@
 from dataclasses import dataclass
 
 from .card import Card
-
-
-Money = int
+from .money import Money
 
 
 @dataclass
 class Player:
-    hand: tuple[Card, Card]
+    name: str
     money: Money
     bet: Money = 0
+    hand: tuple[Card, Card] | None = None
